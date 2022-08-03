@@ -52,7 +52,7 @@ class Editor extends React.Component {
       const item = {
         title: this.props.title,
         description: this.props.description,
-        image: this.props.image,
+        image: "./../../public/placeholder.png",
         tagList: this.props.tagList,
       };
 
@@ -120,7 +120,7 @@ class Editor extends React.Component {
                     <input
                       className="form-control"
                       type="text"
-                      placeholder="./../../public/placeholder.png"
+                      placeholder="Image url"
                       value={this.props.image}
                       onChange={this.changeImage}
                     />

@@ -16,7 +16,7 @@ const reducer = (state = {}, action) => {
         itemSlug: action.payload ? action.payload.item.slug : "",
         title: action.payload ? action.payload.item.title : "",
         description: action.payload ? action.payload.item.description : "",
-        image: action.payload ? action.payload.item.image : "",
+        image: action.payload ? action.payload.item.image : "./../../../public/placeholder.png",
         tagInput: "",
         tagList: action.payload ? action.payload.item.tagList : [],
       };
